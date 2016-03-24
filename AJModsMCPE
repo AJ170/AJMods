@@ -374,7 +374,7 @@ function mainMenu(){
 
 	var background1 = new android.graphics.drawable.BitmapDrawable(scaledBackgroundDarkDirtImageDecoded1);
 	var scrollText = new android.widget.TextView(ctx);
-scrollText.setText("⚠AJModsMCPE⚠ V 0.7");
+scrollText.setText("⚠AJModsMCPE⚠ V 1.0");
 scrollText.setTextSize(30);                                                                                  scrollText.setTextColor(android.graphics.Color.RED);
 scrollText.setBackgroundDrawable(background1);
 scrollText.setEllipsize(android.text.TextUtils.TruncateAt.MARQUEE);
