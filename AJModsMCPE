@@ -1,0 +1,15 @@
+var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
+
+ctx.runOnUiThread(new java.lang.Runnable(){
+run:function(){
+try{
+android.widget.Toast.makeText(ctx,"Opening the URL...",0).show();
+						var intentBrowser = new android.content.Intent(ctx);
+						intentBrowser.setAction(android.content.Intent.ACTION_VIEW);
+						intentBrowser.setData(android.net.Uri.parse("http://www.minecraftforum.net/forums/minecraft-pocket-edition/mcpe-mods-tools/2663728-o-15-0-0-14-1-20k-downloads-ajmodsmcpe-autoupdate"));
+	ctx.startActivity(intentBrowser)
+}catch(err){
+clientMessage("Error:"+err)
+}
+}
+})
